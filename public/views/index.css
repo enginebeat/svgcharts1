@@ -2,6 +2,11 @@
     border: 1px solid black;
     width: 500px; 
     height: 300px;
+    /* SVG as Canvas has origin at top left
+    to change to normal cartesian coordinates 
+    origin of bottom left */
+    transform-origin: 0 300;
+    transform: scale(1,-1);
     
 }
 
